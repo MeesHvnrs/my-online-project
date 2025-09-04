@@ -1,0 +1,28 @@
+html.background {
+    background-color: #5d1e1e; 
+}
+
+body {
+    position: relative;
+    z-index: 0;
+}
+
+
+html.background body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("../img/200w.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2; 
+    pointer-events: none; 
+    z-index: -1;
+}
+
+.text {
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    font-weight: 900;
+}
